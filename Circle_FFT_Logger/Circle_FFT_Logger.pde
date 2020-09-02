@@ -22,7 +22,7 @@ void setup() {
   noStroke();
   //setup minim
   minim = new Minim(this);
-  player = minim.loadFile("one_mode_l_1_2.au");//you have to download this sound from https://soundcloud.com/nasa/sun-sonification
+  player = minim.loadFile("IMSLP501882-PMLP3722-Ro_5-11_(1)_Pictures_at_an_Exhibition_(Modest_Mussorgsky_-_Maurice_Ravel).mp3");//you have to download this sound from https://soundcloud.com/nasa/sun-sonification
   player.play();
   fft = new FFT(player.bufferSize(), player.sampleRate());
   fft.window(FFT.HAMMING);
